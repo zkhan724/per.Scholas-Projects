@@ -1,24 +1,21 @@
 package com.perscholas;
+
 import java.util.Scanner;
 
-public class SimpleBMICalc {
-
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
+public class SimpleBMICalc 
+{
+	public static void main(String[] args)	// main method
+  {
+	Scanner input = new Scanner(System.in); // create scanner object to allow user input
+	System.out.println("Your Height in Meters:"); // ask user for height in meter
 		
-		// User enters height in meters here.
-		System.out.println("Your Height in Meters:");
-
-		// define variables and characters
-		double meters = input.nextDouble();
-		System.out.println("Your Weight in Kilograms (kg)");
+	double meters = input.nextDouble(); // define integer variable from user height input
+	System.out.println("Your Weight in Kilograms (kg)"); // ask user for weight in Kg
 		
-		double kg = input.nextDouble();
-		double bmi  = kg / (meters * meters); //calculate bmi here (weight / (height ^2))
-			
-		//output what you want to see
-		System.out.println("Your BMI is " + bmi);
-
-	}
+	double kg = input.nextDouble(); // define integer variable from user weight input
+	double bmi  = kg / (meters * meters); //calculate bmi here (weight / (height ^2))
+	
+	System.out.println("Your BMI is " + bmi); // output user BMI
+  }
 
 }
