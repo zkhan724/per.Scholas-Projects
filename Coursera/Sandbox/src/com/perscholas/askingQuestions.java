@@ -2,32 +2,24 @@ package com.perscholas;
 
 import java.util.Scanner;
 
-public class askingQuestions {
-
-	public static void main(String[] args) {
-		// create object of scanner class for input by user.
-		Scanner input = new Scanner(System.in);
+public class askingQuestions 
+{
+	public static void main(String[] args) 
+	{
+		Scanner input = new Scanner(System.in); // create object of scanner class for input by user.
+		System.out.println("Hello. What's your name?"); // User enters the name here.
 		
-		// User enters the name here.
-		System.out.println("Hello. What's your name?");
-
-		// define variables
+		String name = input.nextLine(); // define String variable from user input
+		System.out.println("Hello " + name + " How old are you?"); // ask for user age
 		
-		String name = input.nextLine(); //looks at the next integer
-		System.out.println("Hello " + name + " How old are you?");
+		int age = input.nextInt(); // define integer variable from user input
+		System.out.println("So you're " + age + " eh? That's not old at all! How much do you make, " + name + " ?");// state what user has input
 		
-		//user enters age here
-		int age = input.nextInt();
-		System.out.println("So you're " + age + " eh? That's not old at all! How much do you make, " + name + " ?");// calculate the variable
+		System.out.println("What is your annual income?"); //user enters wage here
+		double wage = input.nextDouble(); // define integer variable from user input
 		
-		//user enters wage here
-		double wage = input.nextDouble();
-		
-		System.out.println("$" + wage + "!" + " That's really good for your " + age);
-		
-
+		System.out.println("$" + wage + "!" + " That's really good for your " + age); // state what user input
 	}
-
-	}
+}
 
 
