@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class StringConcat 
 {
 
-	public static void main(String[] args) 
+	public static void main(String[] args) // main method
 	{
 		Scanner input = new Scanner(System.in); // creates scanner object to allow user input
 		System.out.println("Give me your first word:"); // ask user for first word
