@@ -1,5 +1,7 @@
 package com.perscholas;
 
+// This program gives the user their BMI based upon their height and weight.
+
 import java.util.Scanner;
 
 public class SimpleBMICalc 
