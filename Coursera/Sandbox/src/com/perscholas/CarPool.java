@@ -1,6 +1,6 @@
 package com.perscholas;
 
-//
+// This program gives car pool information based upon the number of cars, drivers, passengers, etc.
 
 import java.util.Scanner;
 
