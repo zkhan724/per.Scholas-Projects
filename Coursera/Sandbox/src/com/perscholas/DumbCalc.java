@@ -7,7 +7,7 @@ public class DumbCalc {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
-		// User enters the 1st number here.
+		// ask user for first number
 		System.out.println("What is your first number?");
 
 		// define variables and characters
@@ -15,6 +15,7 @@ public class DumbCalc {
 		System.out.println("What is your second number?");
 		
 		double num2 = input.nextDouble();
+		// ask user for second number
 		System.out.println("What is your third number?");
 		
 		double num3 = input.nextDouble();
