@@ -4,18 +4,26 @@ import java.util.Scanner;
 
 public class SimpleBMICalc 
 {
-	public static void main(String[] args)	// main method
+	public static void main(String[] args)	
   {
-	Scanner input = new Scanner(System.in); // create scanner object to allow user input
-	System.out.println("Your Height in Meters:"); // ask user for height in meter
+	// create scanner object to allow user input
+	Scanner input = new Scanner(System.in);
 		
-	double meters = input.nextDouble(); // define integer variable from user height input
-	System.out.println("Your Weight in Kilograms (kg)"); // ask user for weight in Kg
-		
-	double kg = input.nextDouble(); // define integer variable from user weight input
-	double bmi  = kg / (meters * meters); //calculate bmi here (weight / (height ^2))
+	// ask user for height in meters
+	System.out.println("Your Height in Meters:");
 	
-	System.out.println("Your BMI is " + bmi); // output user BMI
+	// define integer variable from user height input
+	double meters = input.nextDouble(); 
+	
+	// ask user for weight in Kg
+	System.out.println("Your Weight in Kilograms (kg)"); 
+	
+	// define integer variable from user weight input and alculate bmi (weight / (height ^2
+	double kg = input.nextDouble(); 
+	double bmi  = kg / (meters * meters); 
+	
+	// output user BMI
+	System.out.println("Your BMI is " + bmi);
   }
 
 }
