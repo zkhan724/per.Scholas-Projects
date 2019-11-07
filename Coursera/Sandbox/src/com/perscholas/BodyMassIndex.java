@@ -2,41 +2,55 @@ package com.perscholas;
 
 import java.util.Scanner;
 
-public class BodyMassIndex 
-{
+// This program calculates user's BMI and weight condition.
 
-	public static void main(String[] args) 
+public class BodyMassIndex {
+
+	public static void main(String[] args) // main method
 	{
+		 // creates scanner object to allow user input
+		Scanner input = new Scanner(System.in);
+
+		// Ask user to enter height in meters here,  
+		System.out.println("Your Height in Meters:"); 
 		
-		Scanner input = new Scanner(System.in); //creates object to allow user input
+		// define integer variable from user height input
+		double meters = input.nextDouble();
 		
-		System.out.println("Your Height in Meters:"); // User enters height in meters here.
-		double meters = input.nextDouble(); //assign variable for user input
+		// ask user to enter weight in KG
+		System.out.println("Your Weight in Kilograms (Kg):"); 
 		
-		System.out.println("Your Weight in Kilograms (Kg):"); // User enters weight in Kg here.
-		double kg = input.nextDouble(); //assign variable for user input
+		// define integer variable from user weight input
+		double kg = input.nextDouble(); 
 		
-		double bmi  = kg / (meters * meters); //calculate bmi here (weight / (height ^ 2))
-		
-		System.out.println("\nYour BMI is " + bmi + "\n");// tell the user what their BMI is
-		
-		if (bmi < 18.5) //compare user BMI if its under 18.5
+		// calculate bmi here (weight / (height ^ 2))
+		double bmi = kg / (meters * meters);
+
+		// print out user's BMI
+		System.out.println("\nYour BMI is " + bmi + "\n");
+
+		// Compare BMI to certain conditions to print out results
+		if (bmi < 18.5)
 		{
-			System.out.println("According to you BMI, you are underweight. EAT SOME DAMN FOOD!"); //PRINT OUT STATEMENT IF BMI is under 18.5
+			System.out.println("According to you BMI, you are underweight."); 
 		}
-		else if (bmi >= 18.5 && bmi < 25.0)
+		else if (bmi >= 18 && bmi < 25) 
 		{
-			System.out.println("According to you BMI, you are in normal health range. EASY MONEY!"); //PRINT OUT A STATEMENT IF BMI is >= 18.5 AND BMI is < 25
-		}
-		else if (bmi >= 25.0 && bmi < 30.0)
+			System.out.println("According to you BMI, you are in normal health range!"); 
+		} 
+		else if (bmi >= 25 && bmi < 30) 
 		{
-			System.out.println("According to you BMI, you are overweight. STOP EATING LIKE SHIT"); //PRINT OUT A STATEMENT IF BMI is >= 25.0 AND BMI is < 30.0
-		}
-		else if (bmi >= 30.0)
+			System.out.println("According to you BMI, you are overweight.");
+		} 
+		else if (bmi >= 30) 
 		{
-			System.out.println("According to your BMI, you are obese. GET YOUR FATASS INTO THE GYM!"); //PRINT OUT A STATEMENT IF BMI is >= 30.0
+			System.out.println("According to your BMI, you are obese.");
 		}
-		
+		else 
+		{
+			System.out.println("Error, please fill out correct information.");
+		}
+
 	}
 
 }
