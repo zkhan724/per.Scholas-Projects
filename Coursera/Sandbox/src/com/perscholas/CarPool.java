@@ -1,13 +1,17 @@
 package com.perscholas;
 
+//
+
 import java.util.Scanner;
 
 public class CarPool {
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) 
+	{
+		// create scanner object
 		Scanner input = new Scanner(System.in);
 		
+		// Define all variables
 		int cars = 100;
 		int drivers = 30;
 		int passengers = 90;
@@ -23,6 +27,7 @@ public class CarPool {
 		double gas_cost_per_trip = ((average_miles_driven * gas_cost_per_gallon) / average_miles_per_gallon);
 		double money_saved = ((gas_cost_per_trip * cars) - (gas_cost_per_trip * cars_driven));
 		
+		// print out results
 		System.out.println("\nThere are " + cars + " cars available." +
 		"\nThere are only " + drivers + " drivers available." +
 		"\nThat means their will be " + cars_not_driven + " empty cars today!" +
