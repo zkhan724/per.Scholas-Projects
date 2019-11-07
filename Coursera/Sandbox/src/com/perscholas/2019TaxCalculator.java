@@ -31,11 +31,11 @@ public class ComputingTaxes {
 		// Close scanner object
 		input.close();
 		
-		//define 
+		//define tax rate, and tax owed variables
 		double taxRate;
 		double taxOwed;
 		
-		// Calculate 10% Tax Rate for filing status
+		// Calculate 10% Tax Rate for all filing status
 		if (response == 1 && income <= 9700) 
 		{
 			taxRate = .10;
@@ -125,7 +125,7 @@ public class ComputingTaxes {
 							   "\nYou made $" + income + " in 2019. You owe the IRS $" + taxOwed + " by April 2020.");
 		}
 		
-		// Calculate 24% Tax Rate for all filing
+		// Calculate 24% Tax Rate for all filing status
 		else if (response == 1 && income >= 84201 && income <= 160725) 
 		{
 			taxRate = .24;
