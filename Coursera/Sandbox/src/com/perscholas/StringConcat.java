@@ -1,22 +1,32 @@
 package com.perscholas;
 
+// This program concatenates two words together from user input.
+
 import java.util.Scanner;
 
 public class StringConcat 
 {
 
-	public static void main(String[] args) // main method
-	{
-		Scanner input = new Scanner(System.in); // creates scanner object to allow user input
-		System.out.println("Give me your first word:"); // ask user for first word
+	public static void main(String[] args)
+	{	
+		// creates scanner object to allow user input
+		Scanner input = new Scanner(System.in);
 		
-		String word1 = input.nextLine(); // define string variable from user input
+		// ask user for first word
+		System.out.println("Give me your first word:");
+		
+		// define string variable from user first word
+		String word1 = input.nextLine();
+		
+		// ask user for second word
 		System.out.println("Give me your second word:"); // ask user for second word
 		
-		String word2 = input.nextLine(); // define string variable from user input
-		String word3 = word1.concat(" " + word2); // concatenate both words together
+		// define string variable from user words, and concatenate both words together
+		String word2 = input.nextLine();
+		String word3 = word1.concat(" " + word2); 
 		
-		System.out.println("Put your words together and you get " + word3 + "."); //output concatenated words
+		// print concatenated words
+		System.out.println("Put your words together and you get " + word3 + ".");
 	}
 
 }
