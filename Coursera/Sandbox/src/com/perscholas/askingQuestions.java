@@ -1,24 +1,39 @@
 package com.perscholas;
 
+// This program ask questions based upon user's name, age, and income.
+
 import java.util.Scanner;
 
 public class askingQuestions 
 {
 	public static void main(String[] args) 
 	{
-		Scanner input = new Scanner(System.in); // create object of scanner class for input by user.
-		System.out.println("Hello. What's your name?"); // User enters the name here.
+		// create object of scanner class for input by user.
+		Scanner input = new Scanner(System.in); 
 		
-		String name = input.nextLine(); // define String variable from user input
-		System.out.println("Hello " + name + " How old are you?"); // ask for user age
+		// user enters their name here.
+		System.out.println("Hello. What's your name?"); 
 		
-		int age = input.nextInt(); // define integer variable from user input
-		System.out.println("So you're " + age + " eh? That's not old at all! How much do you make, " + name + " ?");// state what user has input
+		// define String variable from user input
+		String name = input.nextLine();
 		
-		System.out.println("What is your annual income?"); //user enters wage here
-		double wage = input.nextDouble(); // define integer variable from user input
+		// ask for user age
+		System.out.println("Hello " + name + " How old are you?");
 		
-		System.out.println("$" + wage + "!" + " That's really good for your " + age); // state what user input
+		// define age variable from user input
+		int age = input.nextInt();
+		
+		// print the user age and name
+		System.out.println("So you're " + age + " eh? That's not old at all! How much do you make, " + name + " ?");
+		
+		// ask user for income
+		System.out.println("What is your annual income?");
+		
+		// define income variable from user input
+		double income = input.nextDouble();
+		
+		// print results
+		System.out.println("$" + income + "!" + " That's really good for your " + age);
 	}
 }
 
