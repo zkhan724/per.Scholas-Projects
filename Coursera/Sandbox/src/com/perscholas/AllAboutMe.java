@@ -1,5 +1,7 @@
 package com.perscholas; 
 
+// This program tells the story of user based upon information they provide.
+
 import java.util.Scanner; 
 
 public class AllAboutMe 
