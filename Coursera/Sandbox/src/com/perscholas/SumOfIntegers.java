@@ -1,21 +1,31 @@
 package com.perscholas;
 
+// This program gives the Sum of Two Integers from user input.
+
 import java.util.Scanner;
 
 public class SumOfIntegers {
 
 	public static void main(String[] args) {
 		
-		Scanner input = new Scanner(System.in); // creates scanner object to allow user input
-		System.out.println("Give me your first number:"); // ask user for the first number
+		// creates scanner object to allow user input
+		Scanner input = new Scanner(System.in); 
 		
-		int num1 = input.nextInt(); // define integer variable from user input
-		System.out.println("Give me your second number:"); // ask user for the second number
+		// ask user for the first number
+		System.out.println("Give me your first number:");
 		
-		double num2 = input.nextDouble(); // define integer variable from user input
-		double sum = num1 * num2; // calculate the sum of num1 & num2
+		// define integer from user input
+		int num1 = input.nextInt();
 		
-		System.out.println("The Product is " + sum + "."); //output the sum		
+		// ask user for the second number
+		System.out.println("Give me your second number:");
+		
+		// define integer variable from user input, and calculate the sum
+		double num2 = input.nextDouble(); 
+		double sum = num1 * num2; 
+		
+		// print the sum
+		System.out.println("The Product is " + sum + ".");		
 
 	}
 
