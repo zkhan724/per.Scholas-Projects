@@ -1,5 +1,7 @@
 package com.perscholas;
 
+// This program generates a random number and aks the user to guess what that random number is.
+
 import java.util.Scanner;
 
 public class RandomNumberGenerater 
